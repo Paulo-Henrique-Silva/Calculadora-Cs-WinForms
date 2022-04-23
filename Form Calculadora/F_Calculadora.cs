@@ -91,22 +91,24 @@ namespace Form_Calculadora
 
         private void Btn_OpAdi_Click(object sender, EventArgs e)
         {
-
+            Operacoes.AdicionaAoDisplay(this, '+');
         }
 
         private void Btn_OpSub_Click(object sender, EventArgs e)
         {
-
+            Operacoes.AdicionaAoDisplay(this, '-');
         }
 
         private void Btn_OpMut_Click(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(Lbl_Display.Text))
+                Operacoes.AdicionaAoDisplay(this, '*');
         }
 
         private void Btn_OpDiv_Click(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(Lbl_Display.Text))
+                Operacoes.AdicionaAoDisplay(this, '/');
         }
 
         private void Btn_Igual_Click(object sender, EventArgs e)
@@ -116,7 +118,9 @@ namespace Form_Calculadora
 
         private void Btn_Clear_Click(object sender, EventArgs e)
         {
-
+            //Remove o último dígito com base no tamanho da string
+            if (!string.IsNullOrEmpty(Lbl_Display.Text))
+                Lbl_Display.Text = Lbl_Display.Text.Remove(Lbl_Display.Text.Length - 1);
         }
 
         private void Btn_AllClear_Click(object sender, EventArgs e)
