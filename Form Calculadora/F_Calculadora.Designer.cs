@@ -56,6 +56,7 @@
             this.Lbl_Display.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lbl_Display.AutoEllipsis = true;
             this.Lbl_Display.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_Display.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Display.Location = new System.Drawing.Point(6, 0);
@@ -111,7 +112,7 @@
             this.Btn_OpAdi.TabIndex = 19;
             this.Btn_OpAdi.Text = "+";
             this.Btn_OpAdi.UseVisualStyleBackColor = true;
-            this.Btn_OpAdi.Click += new System.EventHandler(this.AdicionaOpAoDisplay);
+            this.Btn_OpAdi.Click += new System.EventHandler(this.ObtemOpDigitada);
             // 
             // Btn_CasaDec
             // 
@@ -141,7 +142,7 @@
             this.Btn_OpSub.TabIndex = 14;
             this.Btn_OpSub.Text = "-";
             this.Btn_OpSub.UseVisualStyleBackColor = true;
-            this.Btn_OpSub.Click += new System.EventHandler(this.AdicionaOpAoDisplay);
+            this.Btn_OpSub.Click += new System.EventHandler(this.ObtemOpDigitada);
             // 
             // Btn_Num3
             // 
@@ -191,7 +192,7 @@
             this.Btn_OpMut.TabIndex = 9;
             this.Btn_OpMut.Text = "*";
             this.Btn_OpMut.UseVisualStyleBackColor = true;
-            this.Btn_OpMut.Click += new System.EventHandler(this.AdicionaOpAoDisplay);
+            this.Btn_OpMut.Click += new System.EventHandler(this.ObtemOpDigitada);
             // 
             // Btn_Num6
             // 
@@ -241,7 +242,7 @@
             this.Btn_OpDiv.TabIndex = 4;
             this.Btn_OpDiv.Text = "/";
             this.Btn_OpDiv.UseVisualStyleBackColor = true;
-            this.Btn_OpDiv.Click += new System.EventHandler(this.AdicionaOpAoDisplay);
+            this.Btn_OpDiv.Click += new System.EventHandler(this.ObtemOpDigitada);
             // 
             // Btn_Num9
             // 

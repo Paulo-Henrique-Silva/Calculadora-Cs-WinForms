@@ -12,6 +12,9 @@ namespace Form_Calculadora
 {
     public partial class F_Calculadora : Form
     {
+        private decimal val1;
+        private string OpSymb;
+
         public F_Calculadora()
         {
             InitializeComponent();
@@ -24,8 +27,7 @@ namespace Form_Calculadora
         /// <param name="e"></param>
         private void AdicionaNumAoDisplay(object sender, EventArgs e)
         {
-            if (Lbl_Display.Text.Length < 20)
-                Lbl_Display.Text += (sender as Button).Text;
+            Lbl_Display.Text += (sender as Button).Text;
         }
 
         /// <summary>
@@ -33,15 +35,42 @@ namespace Form_Calculadora
         /// </summary>
         /// <param name="sender">Botão como objeto</param>
         /// <param name="e"></param>
-        private void AdicionaOpAoDisplay(object sender, EventArgs e)
+        private void ObtemOpDigitada(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(Lbl_Display.Text) || Lbl_Display.Text.Length < 20)
-                Lbl_Display.Text += (sender as Button).Text;
+            if (!string.IsNullOrEmpty(Lbl_Display.Text))
+            {
+                OpSymb = (sender as Button).Text;
+                val1 = decimal.Parse(Lbl_Display.Text);
+                Lbl_Display.ResetText();
+            }
         }
 
         private void Btn_Igual_Click(object sender, EventArgs e)
         {
-            
+            if (!string.IsNullOrEmpty(Lbl_Display.Text))
+            {
+                decimal val2 = decimal.Parse(Lbl_Display.Text); 
+
+                switch (OpSymb) 
+                {
+                    case "+":
+                        Lbl_Display.Text = (val1 + val2).ToString();
+                        break;
+
+                    case "-":
+                        Lbl_Display.Text = (val1 - val2).ToString();
+                        break;
+
+                    case "*":
+                        Lbl_Display.Text = (val1 * val2).ToString();
+                        break;
+
+                    case "/":
+                        Lbl_Display.Text = (val2 == 0) ? "Impossível Dividir!" : (val1 / val2).ToString();
+                        break;
+                };
+
+            }
         }
 
         private void Btn_Clear_Click(object sender, EventArgs e)
@@ -54,6 +83,8 @@ namespace Form_Calculadora
         private void Btn_AllClear_Click(object sender, EventArgs e)
         {
             Lbl_Display.ResetText();
+            val1 = 0m;
+            OpSymb = string.Empty;
         }
     }
 }
