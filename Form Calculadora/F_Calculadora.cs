@@ -31,7 +31,7 @@ namespace Form_Calculadora
         }
 
         /// <summary>
-        /// A partir de um botão, adiciona o texto do botão(operação) ao display, caso o label vazio.
+        /// A partir de um botão, atualiza o val1 conforme a operação digitada.
         /// </summary>
         /// <param name="sender">Botão como objeto</param>
         /// <param name="e"></param>
@@ -39,8 +39,42 @@ namespace Form_Calculadora
         {
             if (!string.IsNullOrEmpty(Lbl_Display.Text))
             {
+                decimal val1Update = decimal.Parse(Lbl_Display.Text);
+                string ultimaOp = OpSymb;
+
+                //salva a op digitada e atualiza o val1 conforme a anterior
                 OpSymb = (sender as Button).Text;
-                val1 = decimal.Parse(Lbl_Display.Text);
+
+                switch (ultimaOp) 
+                {
+                    case "+":
+                        val1 += val1Update;
+                        break;
+
+                    case "-":
+                        val1 = (val1 == 0) ? val1Update : val1 - val1Update;
+                        break;
+
+                    case "*":
+                        val1 = (val1 == 0) ? val1Update : val1 * val1Update;
+                        break;
+
+                    case "/":
+
+                        if (val1 == 0) 
+                            val1 = val1Update;
+                        else if (val1Update == 0) 
+                            DivZeroErro();
+                        else 
+                            val1 /= val1Update;
+
+                        break;
+
+                    default:
+                        val1 = val1Update;
+                        break;
+                }
+
                 Lbl_Display.ResetText();
             }
         }
@@ -51,7 +85,7 @@ namespace Form_Calculadora
             {
                 decimal val2 = decimal.Parse(Lbl_Display.Text); 
 
-                switch (OpSymb) 
+                switch (OpSymb) //termina a conta conforme a op digitada pelo usuário
                 {
                     case "+":
                         Lbl_Display.Text = (val1 + val2).ToString();
@@ -66,10 +100,16 @@ namespace Form_Calculadora
                         break;
 
                     case "/":
-                        Lbl_Display.Text = (val2 == 0) ? "Impossível Dividir!" : (val1 / val2).ToString();
-                        break;
-                };
 
+                        if (val2 == 0)
+                            DivZeroErro();
+                        else
+                            Lbl_Display.Text = (val1 / val2).ToString();
+
+                        break;
+                }
+
+                val1 = 0m; //reseta o val1 para recomeçar a conta
             }
         }
 
@@ -82,6 +122,15 @@ namespace Form_Calculadora
 
         private void Btn_AllClear_Click(object sender, EventArgs e)
         {
+            //reseta todos os elementos da calculadora
+            Lbl_Display.ResetText();
+            val1 = 0m;
+            OpSymb = string.Empty;
+        }
+
+        private void DivZeroErro()
+        {
+            MessageBox.Show("É impossível dividir por Zero.", "Math Error");
             Lbl_Display.ResetText();
             val1 = 0m;
             OpSymb = string.Empty;
