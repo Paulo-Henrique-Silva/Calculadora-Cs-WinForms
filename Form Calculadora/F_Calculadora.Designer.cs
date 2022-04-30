@@ -359,9 +359,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "F_Calculadora";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
+            this.Load += new System.EventHandler(this.F_Calculadora_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
