@@ -63,8 +63,11 @@ namespace Form_Calculadora
 
                         if (val1 == 0) 
                             val1 = val1Update;
-                        else if (val1Update == 0) 
+                        else if (val1Update == 0)
+                        {
                             DivZeroErro();
+                            return;
+                        }
                         else 
                             val1 /= val1Update;
 
@@ -76,6 +79,7 @@ namespace Form_Calculadora
                 }
 
                 Lbl_Display.ResetText();
+                Lbl_Conta.Text = $"{val1} {OpSymb}"; //mostra a conta atual ao user
             }
         }
 
@@ -102,13 +106,17 @@ namespace Form_Calculadora
                     case "/":
 
                         if (val2 == 0)
+                        {
                             DivZeroErro();
+                            return;
+                        }
                         else
                             Lbl_Display.Text = (val1 / val2).ToString();
 
                         break;
                 }
 
+                Lbl_Conta.Text = $"{val1} {OpSymb} {val2} = ";
                 val1 = 0m; //reseta o val1 para recomeçar a conta
             }
         }
@@ -124,6 +132,7 @@ namespace Form_Calculadora
         {
             //reseta todos os elementos da calculadora
             Lbl_Display.ResetText();
+            Lbl_Conta.ResetText();
             val1 = 0m;
             OpSymb = string.Empty;
         }
@@ -131,7 +140,9 @@ namespace Form_Calculadora
         private void DivZeroErro()
         {
             MessageBox.Show("É impossível dividir por Zero.", "Math Error");
+
             Lbl_Display.ResetText();
+            Lbl_Conta.ResetText();
             val1 = 0m;
             OpSymb = string.Empty;
         }

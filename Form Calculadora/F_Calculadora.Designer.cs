@@ -48,20 +48,20 @@
             this.Btn_Num9 = new System.Windows.Forms.Button();
             this.Btn_Num8 = new System.Windows.Forms.Button();
             this.Btn_Num7 = new System.Windows.Forms.Button();
+            this.Lbl_Conta = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Lbl_Display
             // 
-            this.Lbl_Display.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lbl_Display.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_Display.AutoEllipsis = true;
             this.Lbl_Display.BackColor = System.Drawing.Color.Black;
             this.Lbl_Display.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Lbl_Display.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Display.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Lbl_Display.Location = new System.Drawing.Point(6, 0);
+            this.Lbl_Display.Location = new System.Drawing.Point(7, 41);
             this.Lbl_Display.Name = "Lbl_Display";
             this.Lbl_Display.Size = new System.Drawing.Size(354, 48);
             this.Lbl_Display.TabIndex = 0;
@@ -92,9 +92,10 @@
             this.panel1.Controls.Add(this.Btn_Num8);
             this.panel1.Controls.Add(this.Btn_Num7);
             this.panel1.Controls.Add(this.Lbl_Display);
+            this.panel1.Controls.Add(this.Lbl_Conta);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(366, 304);
+            this.panel1.Size = new System.Drawing.Size(366, 347);
             this.panel1.TabIndex = 1;
             // 
             // Btn_Igual
@@ -102,7 +103,7 @@
             this.Btn_Igual.BackColor = System.Drawing.Color.Black;
             this.Btn_Igual.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Igual.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_Igual.Location = new System.Drawing.Point(294, 189);
+            this.Btn_Igual.Location = new System.Drawing.Point(295, 230);
             this.Btn_Igual.Name = "Btn_Igual";
             this.Btn_Igual.Size = new System.Drawing.Size(66, 114);
             this.Btn_Igual.TabIndex = 20;
@@ -115,7 +116,7 @@
             this.Btn_OpAdi.BackColor = System.Drawing.Color.Black;
             this.Btn_OpAdi.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_OpAdi.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_OpAdi.Location = new System.Drawing.Point(222, 249);
+            this.Btn_OpAdi.Location = new System.Drawing.Point(223, 290);
             this.Btn_OpAdi.Name = "Btn_OpAdi";
             this.Btn_OpAdi.Size = new System.Drawing.Size(66, 54);
             this.Btn_OpAdi.TabIndex = 19;
@@ -128,7 +129,7 @@
             this.Btn_CasaDec.BackColor = System.Drawing.Color.Black;
             this.Btn_CasaDec.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_CasaDec.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_CasaDec.Location = new System.Drawing.Point(150, 249);
+            this.Btn_CasaDec.Location = new System.Drawing.Point(151, 290);
             this.Btn_CasaDec.Name = "Btn_CasaDec";
             this.Btn_CasaDec.Size = new System.Drawing.Size(66, 54);
             this.Btn_CasaDec.TabIndex = 18;
@@ -141,7 +142,7 @@
             this.Btn_Num0.BackColor = System.Drawing.Color.Black;
             this.Btn_Num0.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Num0.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_Num0.Location = new System.Drawing.Point(6, 249);
+            this.Btn_Num0.Location = new System.Drawing.Point(7, 290);
             this.Btn_Num0.Name = "Btn_Num0";
             this.Btn_Num0.Size = new System.Drawing.Size(138, 54);
             this.Btn_Num0.TabIndex = 16;
@@ -154,7 +155,7 @@
             this.Btn_OpSub.BackColor = System.Drawing.Color.Black;
             this.Btn_OpSub.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_OpSub.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_OpSub.Location = new System.Drawing.Point(222, 189);
+            this.Btn_OpSub.Location = new System.Drawing.Point(223, 230);
             this.Btn_OpSub.Name = "Btn_OpSub";
             this.Btn_OpSub.Size = new System.Drawing.Size(66, 54);
             this.Btn_OpSub.TabIndex = 14;
@@ -167,7 +168,7 @@
             this.Btn_Num3.BackColor = System.Drawing.Color.Black;
             this.Btn_Num3.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Num3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_Num3.Location = new System.Drawing.Point(150, 189);
+            this.Btn_Num3.Location = new System.Drawing.Point(151, 230);
             this.Btn_Num3.Name = "Btn_Num3";
             this.Btn_Num3.Size = new System.Drawing.Size(66, 54);
             this.Btn_Num3.TabIndex = 13;
@@ -180,7 +181,7 @@
             this.Btn_Num2.BackColor = System.Drawing.Color.Black;
             this.Btn_Num2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Num2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_Num2.Location = new System.Drawing.Point(78, 189);
+            this.Btn_Num2.Location = new System.Drawing.Point(79, 230);
             this.Btn_Num2.Name = "Btn_Num2";
             this.Btn_Num2.Size = new System.Drawing.Size(66, 54);
             this.Btn_Num2.TabIndex = 12;
@@ -193,7 +194,7 @@
             this.Btn_Num1.BackColor = System.Drawing.Color.Black;
             this.Btn_Num1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Num1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_Num1.Location = new System.Drawing.Point(6, 189);
+            this.Btn_Num1.Location = new System.Drawing.Point(7, 230);
             this.Btn_Num1.Name = "Btn_Num1";
             this.Btn_Num1.Size = new System.Drawing.Size(66, 54);
             this.Btn_Num1.TabIndex = 11;
@@ -206,7 +207,7 @@
             this.Btn_Clear.BackColor = System.Drawing.Color.Black;
             this.Btn_Clear.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Clear.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_Clear.Location = new System.Drawing.Point(294, 129);
+            this.Btn_Clear.Location = new System.Drawing.Point(295, 170);
             this.Btn_Clear.Name = "Btn_Clear";
             this.Btn_Clear.Size = new System.Drawing.Size(66, 54);
             this.Btn_Clear.TabIndex = 10;
@@ -219,7 +220,7 @@
             this.Btn_OpMut.BackColor = System.Drawing.Color.Black;
             this.Btn_OpMut.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_OpMut.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_OpMut.Location = new System.Drawing.Point(222, 129);
+            this.Btn_OpMut.Location = new System.Drawing.Point(223, 170);
             this.Btn_OpMut.Name = "Btn_OpMut";
             this.Btn_OpMut.Size = new System.Drawing.Size(66, 54);
             this.Btn_OpMut.TabIndex = 9;
@@ -232,7 +233,7 @@
             this.Btn_Num6.BackColor = System.Drawing.Color.Black;
             this.Btn_Num6.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Num6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_Num6.Location = new System.Drawing.Point(150, 129);
+            this.Btn_Num6.Location = new System.Drawing.Point(151, 170);
             this.Btn_Num6.Name = "Btn_Num6";
             this.Btn_Num6.Size = new System.Drawing.Size(66, 54);
             this.Btn_Num6.TabIndex = 8;
@@ -245,7 +246,7 @@
             this.Btn_Num5.BackColor = System.Drawing.Color.Black;
             this.Btn_Num5.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Num5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_Num5.Location = new System.Drawing.Point(78, 129);
+            this.Btn_Num5.Location = new System.Drawing.Point(79, 170);
             this.Btn_Num5.Name = "Btn_Num5";
             this.Btn_Num5.Size = new System.Drawing.Size(66, 54);
             this.Btn_Num5.TabIndex = 7;
@@ -258,7 +259,7 @@
             this.Btn_Num4.BackColor = System.Drawing.Color.Black;
             this.Btn_Num4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Num4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_Num4.Location = new System.Drawing.Point(6, 129);
+            this.Btn_Num4.Location = new System.Drawing.Point(7, 170);
             this.Btn_Num4.Name = "Btn_Num4";
             this.Btn_Num4.Size = new System.Drawing.Size(66, 54);
             this.Btn_Num4.TabIndex = 6;
@@ -271,7 +272,7 @@
             this.Btn_AllClear.BackColor = System.Drawing.Color.Black;
             this.Btn_AllClear.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_AllClear.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_AllClear.Location = new System.Drawing.Point(294, 69);
+            this.Btn_AllClear.Location = new System.Drawing.Point(295, 110);
             this.Btn_AllClear.Name = "Btn_AllClear";
             this.Btn_AllClear.Size = new System.Drawing.Size(66, 54);
             this.Btn_AllClear.TabIndex = 5;
@@ -284,7 +285,7 @@
             this.Btn_OpDiv.BackColor = System.Drawing.Color.Black;
             this.Btn_OpDiv.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_OpDiv.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_OpDiv.Location = new System.Drawing.Point(222, 69);
+            this.Btn_OpDiv.Location = new System.Drawing.Point(223, 110);
             this.Btn_OpDiv.Name = "Btn_OpDiv";
             this.Btn_OpDiv.Size = new System.Drawing.Size(66, 54);
             this.Btn_OpDiv.TabIndex = 4;
@@ -297,7 +298,7 @@
             this.Btn_Num9.BackColor = System.Drawing.Color.Black;
             this.Btn_Num9.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Num9.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_Num9.Location = new System.Drawing.Point(150, 69);
+            this.Btn_Num9.Location = new System.Drawing.Point(151, 110);
             this.Btn_Num9.Name = "Btn_Num9";
             this.Btn_Num9.Size = new System.Drawing.Size(66, 54);
             this.Btn_Num9.TabIndex = 3;
@@ -310,7 +311,7 @@
             this.Btn_Num8.BackColor = System.Drawing.Color.Black;
             this.Btn_Num8.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Num8.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_Num8.Location = new System.Drawing.Point(78, 69);
+            this.Btn_Num8.Location = new System.Drawing.Point(79, 110);
             this.Btn_Num8.Name = "Btn_Num8";
             this.Btn_Num8.Size = new System.Drawing.Size(66, 54);
             this.Btn_Num8.TabIndex = 2;
@@ -323,7 +324,7 @@
             this.Btn_Num7.BackColor = System.Drawing.Color.Black;
             this.Btn_Num7.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Num7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Btn_Num7.Location = new System.Drawing.Point(6, 69);
+            this.Btn_Num7.Location = new System.Drawing.Point(7, 110);
             this.Btn_Num7.Name = "Btn_Num7";
             this.Btn_Num7.Size = new System.Drawing.Size(66, 54);
             this.Btn_Num7.TabIndex = 1;
@@ -331,12 +332,26 @@
             this.Btn_Num7.UseVisualStyleBackColor = false;
             this.Btn_Num7.Click += new System.EventHandler(this.AdicionaNumAoDisplay);
             // 
+            // Lbl_Conta
+            // 
+            this.Lbl_Conta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lbl_Conta.AutoEllipsis = true;
+            this.Lbl_Conta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Conta.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Lbl_Conta.Location = new System.Drawing.Point(7, 0);
+            this.Lbl_Conta.Name = "Lbl_Conta";
+            this.Lbl_Conta.Size = new System.Drawing.Size(354, 41);
+            this.Lbl_Conta.TabIndex = 21;
+            this.Lbl_Conta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // F_Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(390, 327);
+            this.ClientSize = new System.Drawing.Size(390, 370);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -373,6 +388,7 @@
         private System.Windows.Forms.Button Btn_Num8;
         private System.Windows.Forms.Button Btn_Num7;
         private System.Windows.Forms.Label Lbl_Display;
+        private System.Windows.Forms.Label Lbl_Conta;
     }
 }
 
