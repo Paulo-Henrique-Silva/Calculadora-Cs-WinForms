@@ -123,12 +123,11 @@ namespace Form_Calculadora
 
                     default:
                         Lbl_Display.Text = val2.ToString();
-                        val1 = '\0';
                         break;
                 }
 
                 //mostra a conta completa ao user
-                Lbl_Conta.Text = (val1 == '\0') ? $"{val2} = " : $"{val1} {OpSymb} {val2} = ";
+                Lbl_Conta.Text = string.IsNullOrEmpty(OpSymb) ? $"{val2} = " : $"{val1} {OpSymb} {val2} = ";
 
                 //reseta o val1 e a op para recomeçar a conta
                 val1 = 0m; 
