@@ -44,9 +44,10 @@ namespace Form_Calculadora
                 decimal val1Update = decimal.Parse(Lbl_Display.Text);
                 string ultimaOp = OpSymb;
 
-                //salva a op digitada e atualiza o val1 conforme a anterior
+                //salva a op digitada
                 OpSymb = (sender as Button).Text;
 
+                //Atualiza o val1 conforme a op anterior, caso haja
                 switch (ultimaOp) 
                 {
                     case "+":
@@ -54,18 +55,16 @@ namespace Form_Calculadora
                         break;
 
                     case "-":
-                        val1 = (val1 == 0) ? val1Update : val1 - val1Update;
+                        val1 -= val1Update;
                         break;
 
                     case "*":
-                        val1 = (val1 == 0) ? val1Update : val1 * val1Update;
+                        val1 *= val1Update;
                         break;
 
                     case "/":
 
-                        if (val1 == 0) 
-                            val1 = val1Update;
-                        else if (val1Update == 0)
+                        if (val1Update == 0)
                         {
                             DivZeroErro();
                             return;
@@ -85,6 +84,11 @@ namespace Form_Calculadora
             }
         }
 
+        /// <summary>
+        /// Realiza a Operação val1 + val2 (atual número no display).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Btn_Igual_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(Lbl_Display.Text))
@@ -116,10 +120,18 @@ namespace Form_Calculadora
                             Lbl_Display.Text = (val1 / val2).ToString();
 
                         break;
+
+                    default:
+                        Lbl_Display.Text = val2.ToString();
+                        val1 = '\0';
+                        break;
                 }
 
-                Lbl_Conta.Text = $"{val1} {OpSymb} {val2} = ";
-                val1 = 0m; //reseta o val1 para recomeçar a conta
+                Lbl_Conta.Text = (val1 == '\0') ? $"{val2} = " : $"{val1} {OpSymb} {val2} = ";
+
+                //reseta o val1 e a op para recomeçar a conta
+                val1 = 0m; 
+                OpSymb = string.Empty;
             }
         }
 
