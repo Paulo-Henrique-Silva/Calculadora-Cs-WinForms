@@ -39,15 +39,17 @@ namespace Form_Calculadora
         /// <param name="e"></param>
         private void ObtemOpDigitada(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(Lbl_Display.Text))
-            {
-                decimal val1Update = decimal.Parse(Lbl_Display.Text);
-                string ultimaOp = OpSymb;
+            //Caso a op indique se o número é positivo ou negativo
+            if (string.IsNullOrEmpty(Lbl_Display.Text) && ((sender as Button).Text == "+" || (sender as Button).Text == "-"))
+                Lbl_Display.Text += (sender as Button).Text;
 
-                //salva a op digitada
+            if (decimal.TryParse(Lbl_Display.Text, out decimal val1Update))
+            {
+                //salva a ultima op digitada e obtem a atual 
+                string ultimaOp = OpSymb;
                 OpSymb = (sender as Button).Text;
 
-                //Atualiza o val1 conforme a op anterior, caso haja
+                //Atualiza o val1 conforme a op anterior, caso haja uma
                 switch (ultimaOp) 
                 {
                     case "+":
@@ -91,10 +93,8 @@ namespace Form_Calculadora
         /// <param name="e"></param>
         private void Btn_Igual_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(Lbl_Display.Text))
+            if (decimal.TryParse(Lbl_Display.Text, out decimal val2))
             {
-                decimal val2 = decimal.Parse(Lbl_Display.Text); 
-
                 switch (OpSymb) //termina a conta conforme a op digitada pelo usuário
                 {
                     case "+":
@@ -127,6 +127,7 @@ namespace Form_Calculadora
                         break;
                 }
 
+                //mostra a conta completa ao user
                 Lbl_Conta.Text = (val1 == '\0') ? $"{val2} = " : $"{val1} {OpSymb} {val2} = ";
 
                 //reseta o val1 e a op para recomeçar a conta
