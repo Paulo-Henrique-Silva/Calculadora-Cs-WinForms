@@ -20,8 +20,6 @@ namespace Form_Calculadora
             InitializeComponent();
         }
 
-        private void F_Calculadora_Load(object sender, EventArgs e) => Icon = Properties.Resources.Icon_Calculadora;
-
         /// <summary>
         /// A partir de um botão, adiciona o texto do botão ao Display.
         /// </summary>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Calculadora));
             this.Lbl_Display = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Btn_Igual = new System.Windows.Forms.Button();
@@ -57,10 +58,10 @@
             this.Lbl_Display.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_Display.AutoEllipsis = true;
-            this.Lbl_Display.BackColor = System.Drawing.Color.Black;
+            this.Lbl_Display.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Lbl_Display.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Lbl_Display.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Display.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Lbl_Display.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Lbl_Display.Location = new System.Drawing.Point(7, 41);
             this.Lbl_Display.Name = "Lbl_Display";
             this.Lbl_Display.Size = new System.Drawing.Size(354, 48);
@@ -100,9 +101,9 @@
             // 
             // Btn_Igual
             // 
-            this.Btn_Igual.BackColor = System.Drawing.Color.Black;
+            this.Btn_Igual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_Igual.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Igual.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_Igual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_Igual.Location = new System.Drawing.Point(295, 230);
             this.Btn_Igual.Name = "Btn_Igual";
             this.Btn_Igual.Size = new System.Drawing.Size(66, 114);
@@ -113,9 +114,9 @@
             // 
             // Btn_OpAdi
             // 
-            this.Btn_OpAdi.BackColor = System.Drawing.Color.Black;
+            this.Btn_OpAdi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_OpAdi.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_OpAdi.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_OpAdi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_OpAdi.Location = new System.Drawing.Point(223, 290);
             this.Btn_OpAdi.Name = "Btn_OpAdi";
             this.Btn_OpAdi.Size = new System.Drawing.Size(66, 54);
@@ -126,9 +127,9 @@
             // 
             // Btn_CasaDec
             // 
-            this.Btn_CasaDec.BackColor = System.Drawing.Color.Black;
+            this.Btn_CasaDec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_CasaDec.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_CasaDec.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_CasaDec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_CasaDec.Location = new System.Drawing.Point(151, 290);
             this.Btn_CasaDec.Name = "Btn_CasaDec";
             this.Btn_CasaDec.Size = new System.Drawing.Size(66, 54);
@@ -139,9 +140,9 @@
             // 
             // Btn_Num0
             // 
-            this.Btn_Num0.BackColor = System.Drawing.Color.Black;
+            this.Btn_Num0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_Num0.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Num0.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_Num0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_Num0.Location = new System.Drawing.Point(7, 290);
             this.Btn_Num0.Name = "Btn_Num0";
             this.Btn_Num0.Size = new System.Drawing.Size(138, 54);
@@ -152,9 +153,9 @@
             // 
             // Btn_OpSub
             // 
-            this.Btn_OpSub.BackColor = System.Drawing.Color.Black;
+            this.Btn_OpSub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_OpSub.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_OpSub.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_OpSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_OpSub.Location = new System.Drawing.Point(223, 230);
             this.Btn_OpSub.Name = "Btn_OpSub";
             this.Btn_OpSub.Size = new System.Drawing.Size(66, 54);
@@ -165,9 +166,9 @@
             // 
             // Btn_Num3
             // 
-            this.Btn_Num3.BackColor = System.Drawing.Color.Black;
+            this.Btn_Num3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_Num3.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Num3.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_Num3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_Num3.Location = new System.Drawing.Point(151, 230);
             this.Btn_Num3.Name = "Btn_Num3";
             this.Btn_Num3.Size = new System.Drawing.Size(66, 54);
@@ -178,9 +179,9 @@
             // 
             // Btn_Num2
             // 
-            this.Btn_Num2.BackColor = System.Drawing.Color.Black;
+            this.Btn_Num2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_Num2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Num2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_Num2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_Num2.Location = new System.Drawing.Point(79, 230);
             this.Btn_Num2.Name = "Btn_Num2";
             this.Btn_Num2.Size = new System.Drawing.Size(66, 54);
@@ -191,9 +192,9 @@
             // 
             // Btn_Num1
             // 
-            this.Btn_Num1.BackColor = System.Drawing.Color.Black;
+            this.Btn_Num1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_Num1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Num1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_Num1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_Num1.Location = new System.Drawing.Point(7, 230);
             this.Btn_Num1.Name = "Btn_Num1";
             this.Btn_Num1.Size = new System.Drawing.Size(66, 54);
@@ -204,9 +205,9 @@
             // 
             // Btn_Clear
             // 
-            this.Btn_Clear.BackColor = System.Drawing.Color.Black;
+            this.Btn_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_Clear.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Clear.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_Clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_Clear.Location = new System.Drawing.Point(295, 170);
             this.Btn_Clear.Name = "Btn_Clear";
             this.Btn_Clear.Size = new System.Drawing.Size(66, 54);
@@ -217,9 +218,9 @@
             // 
             // Btn_OpMut
             // 
-            this.Btn_OpMut.BackColor = System.Drawing.Color.Black;
+            this.Btn_OpMut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_OpMut.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_OpMut.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_OpMut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_OpMut.Location = new System.Drawing.Point(223, 170);
             this.Btn_OpMut.Name = "Btn_OpMut";
             this.Btn_OpMut.Size = new System.Drawing.Size(66, 54);
@@ -230,9 +231,9 @@
             // 
             // Btn_Num6
             // 
-            this.Btn_Num6.BackColor = System.Drawing.Color.Black;
+            this.Btn_Num6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_Num6.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Num6.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_Num6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_Num6.Location = new System.Drawing.Point(151, 170);
             this.Btn_Num6.Name = "Btn_Num6";
             this.Btn_Num6.Size = new System.Drawing.Size(66, 54);
@@ -243,9 +244,9 @@
             // 
             // Btn_Num5
             // 
-            this.Btn_Num5.BackColor = System.Drawing.Color.Black;
+            this.Btn_Num5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_Num5.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Num5.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_Num5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_Num5.Location = new System.Drawing.Point(79, 170);
             this.Btn_Num5.Name = "Btn_Num5";
             this.Btn_Num5.Size = new System.Drawing.Size(66, 54);
@@ -256,9 +257,9 @@
             // 
             // Btn_Num4
             // 
-            this.Btn_Num4.BackColor = System.Drawing.Color.Black;
+            this.Btn_Num4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_Num4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Num4.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_Num4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_Num4.Location = new System.Drawing.Point(7, 170);
             this.Btn_Num4.Name = "Btn_Num4";
             this.Btn_Num4.Size = new System.Drawing.Size(66, 54);
@@ -269,9 +270,9 @@
             // 
             // Btn_AllClear
             // 
-            this.Btn_AllClear.BackColor = System.Drawing.Color.Black;
+            this.Btn_AllClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_AllClear.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_AllClear.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_AllClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_AllClear.Location = new System.Drawing.Point(295, 110);
             this.Btn_AllClear.Name = "Btn_AllClear";
             this.Btn_AllClear.Size = new System.Drawing.Size(66, 54);
@@ -282,9 +283,9 @@
             // 
             // Btn_OpDiv
             // 
-            this.Btn_OpDiv.BackColor = System.Drawing.Color.Black;
+            this.Btn_OpDiv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_OpDiv.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_OpDiv.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_OpDiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_OpDiv.Location = new System.Drawing.Point(223, 110);
             this.Btn_OpDiv.Name = "Btn_OpDiv";
             this.Btn_OpDiv.Size = new System.Drawing.Size(66, 54);
@@ -295,9 +296,9 @@
             // 
             // Btn_Num9
             // 
-            this.Btn_Num9.BackColor = System.Drawing.Color.Black;
+            this.Btn_Num9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_Num9.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Num9.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_Num9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_Num9.Location = new System.Drawing.Point(151, 110);
             this.Btn_Num9.Name = "Btn_Num9";
             this.Btn_Num9.Size = new System.Drawing.Size(66, 54);
@@ -308,9 +309,9 @@
             // 
             // Btn_Num8
             // 
-            this.Btn_Num8.BackColor = System.Drawing.Color.Black;
+            this.Btn_Num8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_Num8.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Num8.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_Num8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_Num8.Location = new System.Drawing.Point(79, 110);
             this.Btn_Num8.Name = "Btn_Num8";
             this.Btn_Num8.Size = new System.Drawing.Size(66, 54);
@@ -321,9 +322,9 @@
             // 
             // Btn_Num7
             // 
-            this.Btn_Num7.BackColor = System.Drawing.Color.Black;
+            this.Btn_Num7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Btn_Num7.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Num7.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Btn_Num7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Btn_Num7.Location = new System.Drawing.Point(7, 110);
             this.Btn_Num7.Name = "Btn_Num7";
             this.Btn_Num7.Size = new System.Drawing.Size(66, 54);
@@ -338,8 +339,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_Conta.AutoEllipsis = true;
+            this.Lbl_Conta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.Lbl_Conta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Conta.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Lbl_Conta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Lbl_Conta.Location = new System.Drawing.Point(7, 0);
             this.Lbl_Conta.Name = "Lbl_Conta";
             this.Lbl_Conta.Size = new System.Drawing.Size(354, 41);
@@ -350,18 +352,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.ClientSize = new System.Drawing.Size(390, 370);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "F_Calculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
-            this.Load += new System.EventHandler(this.F_Calculadora_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
